@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arte de René Hebra</title>
+  <style>
+    /* Reset and base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', serif;
+      background-color: #000;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Header Nav */
+    header {
+      background-color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+    .logo {
+      font-family: 'Times New Roman', serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      letter-spacing: 0.1em;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2.5rem;
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    nav ul li {
+      white-space: nowrap;
+    }
+    /* Main Hero Section */
+    .hero {
+      flex-grow: 1;
+      background-image: url(Images/Firefly_gemini-flash_ahora\ genera\ una\ manada\ de\ cachoritos\ en\ fila\ 112209.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 1rem;
+      min-height: 100vh;
+      /* overlay */
+      position: relative;
+      z-index: 1;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: -1;
+    }
+    .hero small {
+      font-size: 1rem;
+      margin: 0 0 0.5rem 0;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      opacity: 0.8;
+      font-family: 'Times New Roman', serif;
+    }
+    .hero h1 {
+      font-family: 'Times New Roman', serif;
+      font-weight: 400;
+      font-size: 4.5rem;
+      letter-spacing: 0.3em;
+      line-height: 1.1;
+      margin: 0;
+      user-select: none;
+      text-transform: uppercase;
+      max-width: 90vw;
+    }
+    /* Footer */
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 0.75rem 1rem;
+      font-size: 0.75rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      user-select: none;
+      color: #ccc;
+    }
+    footer a {
+      font-weight: 700;
+      color: #ccc;
+      text-decoration: underline;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+        letter-spacing: 0.2em;
+      }
+      nav ul {
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+      header {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><div class="logo" aria-label="Logo RH"><img src="Images/Firefly_gemini-flash_ahora genera un logotipo que lleve el tecto VetAmor es una veterianaria 112209.png" alt="" height="50" width="50"  ></div></a>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index2.html">Sobre Nosotros</a></li>
+        <li><a href="index3.html">Productos y Servicios</a></li>
+        <li><a href="index4.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+ <style>
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body,
+    html {
+      height: 100%;
+      background: url(Images/Firefly_gemini-flash_ahora\ genera\ una\ manada\ de\ cachoritos\ en\ fila\ 112209.png) no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+    .login-container {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 2.5rem;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+      text-align: center;
+    }
+    .login-container h2 {
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      font-size: 1.8rem;
+      color: #f0c040;
+    }
+    .login-container form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      padding: 0.9rem 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .login-container input[type="text"]::placeholder,
+    .login-container input[type="password"]::placeholder {
+      color: #999;
+    }
+    .login-container button {
+      background-color: #f0c040;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 1.1rem;
+      letter-spacing: 1.5px;
+    }
+    .login-container button:hover {
+      background-color: #d4a722;
+    }
+    .login-container .forgot-password {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #ccc;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    .login-container .forgot-password:hover {
+      color: #f0c040;
+    }
+    /* Responsive */
+    @media (max-width: 500px) {
+      .login-container {
+        margin: 0 1rem;
+        padding: 2rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Ingreso - VetAmor</h2>
+    <form action="/login" method="POST">
+      <input type="text" name="username" placeholder="Nombre de usuario" required autofocus />
+      <input type="password" name="password" placeholder="Contraseña" required />
+      <button type="submit">Ingresar</button>
+    </form>
+    <div class="forgot-password">¿Olvidaste tu contraseña?</div>
+  </div>
+  <footer>
+    <p><a href="#politica-privacidad">Política de Privacidad</a></p>
+    <p>© 2035 Creado por VetAmor</p>
+  </footer>
+</body>
+</html>
